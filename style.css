@@ -33,3 +33,151 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+}
+
+h1,
+h2,
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+.kontejner{
+	text-shadow: 1px 1px 5px black;
+	color: whitesmoke;
+}
+
+.hlavni {
+	background-image: url(images/salat.jpg);
+	height: 200px;
+	background-size: cover;
+}
+
+.prvni {
+	background-image: url(images/chlebicek.jpg);
+	height: 90px;
+	background-size: cover;
+}
+
+.druhy {
+	background-image: url(images/tacos.jpg);
+	height: 90px;
+	background-size: cover;
+}
+
+.treti {
+	background-image: url(images/cizrna.jpg);
+	height: 90px;
+	background-size: cover;
+}
+
+.ctvrty {
+	background-image: url(images/burger.jpg);
+	height: 90px;
+	background-size: cover;
+}
+
+.recept {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid white;
+}
+
+.hlavni {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+h1,
+h2 {
+	flex-basis: 100%;
+}
+
+@media screen and (min-width: 480px) {
+	h1 {
+		font-size: 36px;
+		padding: 20px;
+	}
+
+	h2 {
+		font-size: 22px;
+		padding: 20px
+	}
+
+	p {
+		padding: 20px;
+	}
+
+	.kontejner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.maly {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.recept {
+		min-height: 150px;
+		flex-basis: 50%;
+	}
+
+	.hlavni {
+		min-height: 250px;
+	}
+
+	.velky {
+		flex-basis: 100%;
+	}
+
+	.prvni,
+	.treti {
+		border-right: 1px solid white;
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.hlavni {
+		min-height: 400px;
+	}
+
+	.recept {
+		min-height: 200px;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	.kontejner {
+		flex-wrap: nowrap;
+	}
+
+	.hlavni {
+		border-right: 1px solid white;
+	}
+}
