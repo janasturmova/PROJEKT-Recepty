@@ -72,26 +72,19 @@ p {
 
 .prvni {
 	background-image: url(images/chlebicek.jpg);
-	height: 90px;
-	background-size: cover;
+	
 }
 
 .druhy {
 	background-image: url(images/tacos.jpg);
-	height: 90px;
-	background-size: cover;
 }
 
 .treti {
 	background-image: url(images/cizrna.jpg);
-	height: 90px;
-	background-size: cover;
 }
 
 .ctvrty {
 	background-image: url(images/burger.jpg);
-	height: 90px;
-	background-size: cover;
 }
 
 .recept {
@@ -99,6 +92,8 @@ p {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	border-top: 1px solid white;
+	height: 90px;
+	background-size: cover;
 }
 
 .hlavni {
