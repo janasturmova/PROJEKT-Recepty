@@ -87,9 +87,14 @@ p {
 	background-image: url(images/burger.jpg);
 }
 
+.popisky {
+	display: flex;
+	justify-content: space-between;
+}
+
 .recept {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-between;
 	border-top: 1px solid white;
 	height: 90px;
@@ -98,13 +103,8 @@ p {
 
 .hlavni {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-between;
-}
-
-h1,
-h2 {
-	flex-basis: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -174,5 +174,10 @@ h2 {
 
 	.hlavni {
 		border-right: 1px solid white;
+	}
+	
+	.prvni,
+	.druhy {
+		border-top: 0;
 	}
 }
